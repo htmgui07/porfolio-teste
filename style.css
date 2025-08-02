@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Changa+One:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@font-face {
+    font-family: principal;
+    src: url(fonts/RecklessNeue-Bold.woff2) format(woff2);
+}
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root {
+    --color01: #4F9AF0;
+    --color02: #6B4FF0;
+    --color03: #4F67F0;
+    --color04: #4FCDF0;
+    --color05: #9F4FF0;
+    --fonte-pcp: "principal", sans-serif; 
+    --font-text: "Opens sans", sans-serif;
+}
+body {
+    max-width: 1200px;
+    min-width: 320px;
+    margin: auto;
+    background-color: #4F67F0;
+    font-family: "Opens Sans", sans-serif;
+}
+header {
+    background-color: #4f9af081;
+    height: 900px;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.527);
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 1px 7px black;
+    background-image: linear-gradient(#6a4ff080), url(img/predio.webp);
+    background-size: cover;
+    margin: auto;
+}
+nav {
+    text-align: center;
+    display: flex;
+    background-color: #4f9af081;
+    width: 1200px;
+    height: 60px;
+    font-family: 'Opens Sans';
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.527);
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.menu li {
+    list-style: none;
+}
+nav .menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-weight: normal;
+    padding: 16px 16px;
+    font-size: 1.1em;
+}
+.menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition-duration: 0.5s;
+}
+.menu a:hover {
+    color: rgb(236, 236, 236);
+    text-decoration: underline;
+    background-color: #4f9af0;
+}
+nav .logos {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+    list-style: none;
+    margin-right: 2em;
+}
+.logos img {
+    width: 30px;
+    height: 30px;
+    margin-top: 1em;
+    transition-duration: 0.5s;
+}
+.logos img:hover {
+    width: 35px;
+    height: 35px;
+}
+#nome {
+    margin: auto;
+    font-weight: normal;
+    padding-right: 3em;
+    color: white;
+    text-decoration: none;
+}
+#nome > a{
+    text-decoration: none;
+    color: white;
+}
+#nome > a:hover {
+    text-decoration: underline;
+    background-color: #4f9af0;
+}
+main {
+    background-color: var(--color02);
+    margin: auto;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.527);
+}
+#principal {
+    font: normal bold 4em "principal", sans-serif;
+    padding-top: 25%;
+}
+#subtitulo {
+    font: normal normal 1em "Opens Sans", sans-serif;
+    margin-top: 16px;
+}
+.secoes {
+    font: normal bold 2em var(--fonte-pcp);
+    color: white;
+    text-align: center;
+}
+.linguagens {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+.linguagens p{
+    text-align: justify;
+    color: black;
+    font: normal normal 1em var(--font-text);
+    margin-top: 2em;
+}
+#certif img{
+    display: block;
+    margin: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    width: 30%;
+}
+footer {
+    background-color: var(--color03);
+    height: 50px;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.527);
+    font: normal normal 1em 'Opens sans', sans-serif;
+    text-align: center;
+    padding-top: 16px;
+    color: black;
+}
